@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             *
+            {
+                border-sizing:border-box;
+            }
+            body
+            {
+                /*background-color:red;*/
+                background-image:url('Images/p2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+       
+            h1
+            {
+                color:white;
+            }
+            table{
+                   background-image:url('Images/p2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            input[type=submit] 
+            {  
+                background-color:darkblue;
+               
+                color: white;  
+                border: none;  
+                cursor: pointer;  
+                width:20%; 
+                padding: 16px 20px; 
+                opacity: 0.9;  
+                border-radius:5px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-variant: small-caps;
+                font-size:20px;
+                border-radius:2px;
+            } 
+            
+            input[type=text],input[type=password] 
+            {  
+                    width: 80%; 
+                    height:100%;
+            }
+            input[type=submit]:hover
+            {
+                transform:scale(1.1);
+                transition:2s;
+                background-color:#576CBC;
+            }
+            td{
+                color:lightcyan;
+            }
+            td:hover{
+                color:lightskyblue;
+            }
+            
+            .outer
+            {
+                margin-top:2%;
+                border:double 2px blue;
+                height:500px;
+                width:650px;
+                border-radius:14px;
+            }
+            p
+            {   color:white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:20px;
+                line-height:20px;
+                padding:5px;
+                text-align:center;
+            }
+            a{
+                color:#4298C4;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="loginDB.jsp" method="post">
+                <table class="outer" border="0" align="center"  cellspacing="20px">
+                    <tr><td colspan="2"><h1 align="center"><u>Login</u></h1></td></tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;">Username</td>
+                        <td><input type="text" placeholder="Enter your username" name="userName" required /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;">Password</td>
+                        <td><input type="password" placeholder="Enter your password" name="pass" required /></td>
+                    </tr>     
+                    <tr class="btn" align="center">
+                        <td colspan="2"><input type="submit" value="Login" name="log"/></td>
+                    </tr>
+                </table>
+            </form>
+            <div class="btn">
+                <p>Do not have an Account?<a href="register.html"> Register</a></p>
+            </div>
+        </div>
+    </body>
+</html>

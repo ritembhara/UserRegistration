@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+            body
+            {
+                /*background-color:red;*/
+                background-image:url('Images/p2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                font-family: 'Times New Roman', Times, serif;
+            }
+            table{
+                   background-image:url('Images/p2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1
+            {
+                color:darkblue;
+            }
+            input[type=submit] 
+            {  
+                background-color:darkblue;  
+                color: white;  
+                border: none;  
+                cursor: pointer;  
+                width:25%; 
+                padding: 16px 20px; 
+                opacity: 0.9;  
+                border-radius:5px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-variant: small-caps;
+                font-size:20px;
+            } 
+            input[type=text],input[type=password],input[type=number]
+            {  
+                width: 80%; 
+                height:100%;
+            }
+                input[type=text],input[type=password],input[type=number]:hover
+            {   border:3px solid #60ACEF;
+            
+            }
+            input[type=submit]:hover
+            {
+                transform:scale(1.1);
+                transition:2s;
+            }
+            .outer
+            {
+                border:solid 2px darkblue;
+                height:500px;
+                width:650px; 
+                margin-top:5%;
+                border-radius:10px;
+            }
+            td{
+                color:white;
+            }
+                   td:hover{
+                color:lightblue;
+            }
+            u{
+                color:lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="RegisterDB.jsp" method="post">
+                <table class="outer" align="center"  cellspacing="20px">
+                    <tr><td colspan="2"><h1 align="center"><u>Registration</u></h1></td></tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;"><b>Name</b></td>
+                        <td><input type="text" name="n" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="font-size:20px;"><b>Address</b></td>
+                        <td><input type="text" name="add" required /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;"><b>Phone</b></td>
+                        <td><input type="text" name="pho" size="10" required /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;"><b>Username</b></td>
+                        <td><input type="text" name="un" required /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="font-size:20px;"><b>Password</b></td>
+                        <td><input type="password" name="ps" required /></td>
+                    </tr>
+                    <tr class="btn" align="center">
+                        <td colspan="2"><input type="submit" value="Register" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
